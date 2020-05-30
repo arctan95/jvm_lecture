@@ -1,2 +1,2 @@
 # jvm_lecture
-MyTest1 - MyTest27:ClassLoader
+MyTest1-MyTest27:ClassLoader
