@@ -12,7 +12,7 @@ import java.util.List;
  *              本地方法栈：主要用于执行本地native方法
  * 线程共享：
  *              堆（Heap）：JVM管理的最大一块内存空间 新生代、老年代：Eden空间（80%）、From Survivor空间（10%）与To Survivor空间（10%）
- *              方法区（Method Area）：存储元信息，永久代（Permanent Generation）从JDK1.8开始已经彻底废弃，使用元空间（Meta Space）
+ *              方法区（Method Area）：存储元信息，永久代（Permanent Generation）从JDK1.8开始已经彻底废弃，使用与堆不相连的本地内存区域：元空间（Meta Space）64位默认21M
  *              运行时常量池：方法区的一部分，存储常量、符号引用等
  *
  *              直接内存（Direct Memory）：堆外内存，非JVm直接管理而是由操作系统管理，与Java NIO密切相关
