@@ -7,7 +7,7 @@ import java.util.List;
  * @ClassName MyTest1
  * @Description
  * 线程私有：
- *              虚拟机栈：Stack Frame 栈帧
+ *              虚拟机栈：Stack Frame 栈帧：方法执行的时候创建。栈用于存放局部变量表、操作栈、动态链接、方法出口等信息。一个方法的执行过程就是该方法对于栈帧的入栈出栈过程
  *              程序计数器（Program Counter）
  *              本地方法栈：主要用于执行本地native方法
  * 线程共享：
