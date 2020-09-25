@@ -7,11 +7,11 @@ import java.util.List;
  * @ClassName MyTest1
  * @Description
  * 线程私有：
- *              虚拟机栈：Stack Frame 栈帧：方法执行的时候创建。栈用于存放局部变量表、操作栈、动态链接、方法出口等信息。一个方法的执行过程就是该方法对于栈帧的入栈出栈过程
+ *              虚拟机栈：Stack Frame 栈帧：方法执行的时候创建。栈用于存放局部变量表(引用占4B)、操作栈、动态链接、方法出口等信息。一个方法的执行过程就是该方法对于栈帧的入栈出栈过程
  *              程序计数器（Program Counter）
  *              本地方法栈：主要用于执行本地native方法
  * 线程共享：
- *              堆（Heap）：JVM管理的最大一块内存空间 新生代、老年代：Eden空间（80%）、From Survivor空间（10%）与To Survivor空间（10%）
+ *              堆（Heap）：JVM管理的最大一块内存空间 老年代、新生代：Eden空间（80%）、From Survivor空间（10%）与To Survivor空间（10%）
  *              方法区（Method Area）：存储元信息，永久代（Permanent Generation）从JDK1.8开始已经彻底废弃，使用与堆不相连的本地内存区域：元空间（Meta Space）64位默认21M
  *              运行时常量池：方法区的一部分，存储常量、符号引用等
  *
